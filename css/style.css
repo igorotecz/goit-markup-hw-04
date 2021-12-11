@@ -126,8 +126,25 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
+.contact-header-mail::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  background-image: url(../imagescvg/envelope_hover.svg);
+}
+
 .contact-header-mail:hover {
   color: var(--second-color);
+}
+.contact-header-tel::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  background-image: url(../imagescvg/Vector_tel.svg);
 }
 
 .contact-header-tel {
@@ -145,18 +162,23 @@ img {
 /*====section-main-slogan-begin=====*/
 
 .slogan {
-  padding: 200px 0;
-}
-.slogan,
-.logo-footer {
-  background-color: var(--header-foter);
-
-  /* position: absolute;
-  width: 1600px;
   height: 600px;
-  left: 0px;
-  top: 80px; */
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/Img_hero_v_2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+
+  padding: 200px 0;
+  background-color: var(--header-foter);
 }
+
 .slogan-site {
   color: var(--back-color);
   width: 696px;
@@ -228,8 +250,32 @@ button.button {
 .benefits-item {
   width: 270px;
 }
+.benefits-item::before {
+  content: "";
+  display: block;
+  width: 270px;
+  height: 120px;
+  background-color: var(--button-secondary);
+  border-radius: 4px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.benefits-item:nth-child(1)::before {
+  background-image: url(../imagescvg/antenna.svg);
+}
+.benefits-item:nth-child(2)::before {
+  background-image: url(../imagescvg/clock.svg);
+}
+.benefits-item:nth-child(3)::before {
+  background-image: url(../imagescvg/PC.svg);
+}
+.benefits-item:nth-child(4)::before {
+  background-image: url(../imagescvg/spaceman.svg);
+}
+
 .advantage {
   color: var(--color);
+  padding-top: 30px;
 
   font-size: 14px;
   line-height: 1.14;
@@ -288,7 +334,20 @@ button.button {
   text-align: center;
   letter-spacing: 0.03em;
 }
+.link-soc-net {
+  display: inline-block;
+  height: 44px;
+  width: 44px;
+  margin-left: 32px;
+  margin-bottom: 30px;
+  background-image: url(../imagescvg/instagram2.svg);
+  background-color: red /*var(--back-color)*/;
+  background-size: 50%;
+  background-repeat: no-repeat;
 
+  background-position: center;
+  border-radius: 50%;
+}
 /*=====sectiom-team-end=====*/
 
 /*=====main end=====*/
@@ -398,12 +457,6 @@ button.button {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--header-foter);
-
-  /* position: absolute;
-  width: 1600px;
-  height: 600px;
-  left: 0px;
-  top: 80px; */
 }
 
 .logo-web {
