@@ -5,6 +5,7 @@
   --header-foter: #2f303a;
   --color-text: #757575;
   --button-secondary: #f5f4fa;
+  --color-icon: #afb1b8;
 }
 
 body {
@@ -132,7 +133,8 @@ img {
   width: 16px;
   height: 12px;
   margin-right: 10px;
-  background-image: url(../imagescvg/envelope_hover.svg);
+  background-image: url(../imagescvg/mail.svg);
+  fill: var(--color-text);
 }
 
 .contact-header-mail:hover {
@@ -144,7 +146,7 @@ img {
   width: 10px;
   height: 16px;
   margin-right: 10px;
-  background-image: url(../imagescvg/Vector_tel.svg);
+  background-image: url(../imagescvg/smartphone.svg);
 }
 
 .contact-header-tel {
@@ -261,16 +263,16 @@ button.button {
   background-position: center;
 }
 .benefits-item:nth-child(1)::before {
-  background-image: url(../imagescvg/antenna.svg);
+  background-image: url(../imagescvg/antenna1.svg);
 }
 .benefits-item:nth-child(2)::before {
-  background-image: url(../imagescvg/clock.svg);
+  background-image: url(../imagescvg/clock1.svg);
 }
 .benefits-item:nth-child(3)::before {
-  background-image: url(../imagescvg/PC.svg);
+  background-image: url(../imagescvg/diagram1.svg);
 }
 .benefits-item:nth-child(4)::before {
-  background-image: url(../imagescvg/spaceman.svg);
+  background-image: url(../imagescvg/astronaut1.svg);
 }
 
 .advantage {
@@ -334,19 +336,40 @@ button.button {
   text-align: center;
   letter-spacing: 0.03em;
 }
-.link-soc-net {
+.linc-social-net {
+  display: inline-flex;
+  /*width: 25px;
+  height: 16px;*/
+}
+.svg {
   display: inline-block;
+  height: 44px;
+  width: 44px;
+  fill: var(--color-icon);
+
+  margin-left: 10px;
+  margin-bottom: 10px;
+
+  border-radius: 50%;
+  background-position: center
+  
+
+  outline: blue;
+}
+.link-soc-net {
+  fill: blue;
+  /*display: inline-block;
   height: 44px;
   width: 44px;
   margin-left: 32px;
   margin-bottom: 30px;
-  background-image: url(../imagescvg/instagram2.svg);
-  background-color: red /*var(--back-color)*/;
+  background-image: url(../imagescvg/sprite.svg#instagram);
+  background-color: teal /*var(--back-color);
   background-size: 50%;
   background-repeat: no-repeat;
 
   background-position: center;
-  border-radius: 50%;
+  border-radius: 50%;*/
 }
 /*=====sectiom-team-end=====*/
 
