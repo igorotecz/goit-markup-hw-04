@@ -298,9 +298,13 @@ button.button {
 
 /*=====sectiom-team-begin=====*/
 .team {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 94px;
   padding-bottom: 94px;
   background-color: var(--button-secondary);
+  justify-content: center;
 }
 .team-member {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -336,42 +340,80 @@ button.button {
   text-align: center;
   letter-spacing: 0.03em;
 }
-.linc-social-net {
-  display: inline-flex;
-  /*width: 25px;
-  height: 16px;*/
+/*==========SOCIAT ICON=============*/
+
+.social-icons {
+  display: flex;
+  width: 100%;
+  height: 90px;
 }
-.svg {
-  display: inline-block;
-  height: 44px;
-  width: 44px;
-  fill: var(--color-icon);
-
-  margin-left: 10px;
-  margin-bottom: 10px;
-
-  border-radius: 50%;
-  background-position: center
-  
-
-  outline: blue;
-}
-.link-soc-net {
-  fill: blue;
-  /*display: inline-block;
-  height: 44px;
-  width: 44px;
+.social-icon:nth-child(1) {
   margin-left: 32px;
-  margin-bottom: 30px;
-  background-image: url(../imagescvg/sprite.svg#instagram);
-  background-color: teal /*var(--back-color);
-  background-size: 50%;
-  background-repeat: no-repeat;
-
-  background-position: center;
-  border-radius: 50%;*/
+}
+.social-icon {
+  display: flex;
+  background-color: var(--back-color);
+  width: 44px;
+  height: 44px;
+  margin-top: 16px;
+  margin-left: 10px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+.social-icon:hover {
+  background-color: var(--second-color);
+}
+.social-net {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: var(--color-icon);
+}
+.social-net:hover {
+  fill: var(--back-color);
 }
 /*=====sectiom-team-end=====*/
+/*==============CLIENTS_BEGIN================*/
+.clients {
+  width: 1170px;
+  height: 372px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.client-icons {
+  display: flex;
+}
+.client-icon {
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  display: flex;
+  align-items: flex-end;
+  margin-right: 30px;
+}
+.client-icon:last-child {
+  margin-right: 0;
+}
+.client-icon:hover {
+  border-color: var(--second-color);
+}
+.icon-logo {
+  width: 170px;
+  height: 92px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: var(--color-icon);
+}
+.icon-logo:hover {
+  fill: var(--second-color);
+}
+/*==============CLIENTS_END================*/
 
 /*=====main end=====*/
 
@@ -477,6 +519,10 @@ button.button {
 
 /*=====footer-begin=====*/
 .logo-footer {
+  display: flex;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--header-foter);
@@ -523,7 +569,15 @@ button.button {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
+h3 {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 
+  color: var(--back-color);
+}
 /*=====footer-end=====*/
 /**/
 /**/
