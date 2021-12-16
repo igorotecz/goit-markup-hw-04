@@ -481,7 +481,7 @@ button.button {
   margin-top: calc(-1 * var(--card-set-gup));
 }
 .projects > .visualization {
-  flex-basis: calc(100% / 3- var(--card-set-gup));
+  flex-basis: calc(100% / 3-var(--card-set-gup));
   margin-left: var(--card-set-gup);
   margin-top: var(--card-set-gup);
 }
@@ -526,6 +526,7 @@ button.button {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--header-foter);
+  justify-content: start;
 }
 
 .logo-web {
@@ -570,6 +571,14 @@ button.button {
   letter-spacing: 0.03em;
 }
 h3 {
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--back-color);
+
+  padding-top: 12px;
   font-weight: bold;
   font-size: 14px;
   line-height: 16px;
@@ -578,6 +587,51 @@ h3 {
 
   color: var(--back-color);
 }
+.contact-footer {
+  width: 280px;
+  margin-left: 200px;
+  margin-right: 0;
+}
+
+/*=======BLOCK_2_FOOTER============*/
+
+.footer-soc-net {
+  width: 220px;
+  margin-left: 70px;
+  justify-content: start;
+}
+.social-icons-footer {
+  display: flex;
+  width: 100%;
+  height: 90px;
+}
+.social-icon-footer:nth-child(1) {
+  margin-left: 0;
+}
+.social-icon-footer {
+  display: flex;
+  background: rgba(255, 255, 255, 0.1);
+  width: 44px;
+  height: 44px;
+  margin-top: 20px;
+  margin-left: 10px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+.social-icon-footer:hover {
+  background-color: var(--second-color);
+}
+.social-net-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: var(--back-color);
+}
+.social-net-footer:hover {
+  fill: var(--back-color);
+}
+
 /*=====footer-end=====*/
 /**/
 /**/
