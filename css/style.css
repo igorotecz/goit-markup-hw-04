@@ -481,7 +481,7 @@ button.button {
   margin-top: calc(-1 * var(--card-set-gup));
 }
 .projects > .visualization {
-  flex-basis: calc(100% / 3-var(--card-set-gup));
+  flex-basis: calc(100% / 3 -var(--card-set-gup));
   margin-left: var(--card-set-gup);
   margin-top: var(--card-set-gup);
 }
